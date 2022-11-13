@@ -1,0 +1,26 @@
+GET http://localhost:3000/user HTTP/1.1
+
+###
+GET http://localhost:3000/user/6370dca5b469c0e24a1d5b61 HTTP/1.1
+
+###
+POST http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Tayo",
+    "email": "tayo@example.com"
+}
+
+###
+PUT http://localhost:3000/user/6370dca5b469c0e24a1d5b61 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Ayo",
+    "email": "ayo@example.com",
+    "age": 15
+}
+
+###
+DELETE http://localhost:3000/user/6370dca5b469c0e24a1d5b61 HTTP/1.1
